@@ -643,6 +643,10 @@ video {
   margin-top: -2rem;
 }
 
+.mb-1{
+  margin-bottom: 0.25rem;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -725,6 +729,18 @@ video {
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.-mb-2{
+  margin-bottom: -0.5rem;
+}
+
+.-mb-5{
+  margin-bottom: -1.25rem;
+}
+
+.-mt-16{
+  margin-top: -4rem;
 }
 
 .block{
@@ -910,6 +926,10 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
 .items-start{
   align-items: flex-start;
 }
@@ -928,6 +948,12 @@ video {
 
 .justify-between{
   justify-content: space-between;
+}
+
+.space-x-1 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-10 > :not([hidden]) ~ :not([hidden]){
@@ -1062,6 +1088,11 @@ video {
 .bg-gray-800{
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+.bg-red-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 
 .bg-red-600{
@@ -1461,6 +1492,16 @@ video {
   .md\:flex-row{
     flex-direction: row;
   }
+
+  .md\:flex-wrap{
+    flex-wrap: wrap;
+  }
+
+  .md\:space-x-1 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+  }
 }
 
 @media (min-width: 1024px){
@@ -1481,6 +1522,10 @@ video {
     flex-direction: row;
   }
 
+  .lg\:flex-wrap{
+    flex-wrap: wrap;
+  }
+
   .lg\:items-center{
     align-items: center;
   }
@@ -1489,6 +1534,12 @@ video {
     --tw-space-x-reverse: 0;
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-x-3 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:text-xl{

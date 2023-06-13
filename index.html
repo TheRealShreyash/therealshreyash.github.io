@@ -14,14 +14,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script
-      src="https://kit.fontawesome.com/a8b98f3938.js"
-      crossorigin="anonymous"
-    ></script>
     <!-- Tippy JS  -->
-    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
-    <script src="https://unpkg.com/popper.js@2/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/tippy.js@6/dist/tippy.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tippy.js@6/animations/scale.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tippy.js@6/animations/scale.css"
+    />
 
     <title>Shreyash | Portfolio</title>
   </head>
@@ -47,23 +48,29 @@
       </ul>
 
       <hr class="" />
-
-      <img src="/assets//pfp.jfif" alt="" class="rounded-full h-32 mt-5 mb-5 mx-auto border border-ftcol transform transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+      <img
+        src="/assets//pfp.jfif"
+        alt=""
+        class="rounded-full h-32 mt-5 mb-5 mx-auto border border-ftcol transform transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg"
+      />
 
       <span
         class="description overflow-hidden whitespace-normal text-white font-comfortaa text-sm inline-block relative w-full my-14 font-semibold p-10 selection:text-icol -mt-10"
       >
         Hey 👋, I am <span class="text-pink-500">Shreyash</span>. I am a
         frontend developer and Python programmer who is passionate about
+        <!-- <br /> -->
         creating user-friendly interfaces and building efficient software
-        solutions. I am constantly expanding my knowledge and skills to stay at
-        the forefront of the ever-evolving technology landscape.
+        solutions. I am constantly expanding
+        <!-- <br /> -->
+        my knowledge and skills to stay at the forefront of the ever-evolving
+        technology landscape.
       </span>
     </div>
 
     <!-- Skills Section -->
 
-    <div class="skills text-center space-x-2 -mt-10">
+    <div class="skills text-center space-x-2 -mt-16">
       <h1
         class="font-hammersmitch font-medium text-pink-500 text-xl mb-2 selection:text-icol"
       >
@@ -94,13 +101,16 @@
 
     <!-- Project Section -->
 
-    <div class="projects text-center flex-col space-y-3 selection:text-icol md:flex-row sm:flex-row lg:flex-row">
-      <h1
-        class="font-hammersmitch font-medium text-pink-500 text-xl mt-8 selection:text-icol"
-      >
-        PROJECTS
-      </h1>
+    <h1
+      class="font-hammersmitch font-medium text-pink-500 text-xl mt-8 selection:text-icol text-center mb-1"
+    >
+      PROJECTS
+    </h1>
 
+    <div
+      class="projects overflow-x-hidden text-center flex flex-col space-y-3 selection:text-icol md:flex-row md:space-x-1 lg:flex-wrap lg:space-x-3"
+    >
+      <div></div>
       <!-- --------------------------------------------------- PROJECT CARDS --------------------------------------------------- -->
       <!-- Github Readme Card -->
       <div
@@ -234,5 +244,23 @@
         </a>
       </div>
     </div>
+    <!-- Loading Scripts -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a8b98f3938.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      tippy("[data-tippy-content]", {
+        arrow: false,
+        inertia: true,
+        animation: "scale",
+        theme: "gradiant",
+        placement: "bottom",
+      });
+    </script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
