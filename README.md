@@ -74,7 +74,6 @@ After cloning & setting up the local project you can push the changes to your gi
 
 ## 🤗 Special Thanks To
 
-- [imfunniee](https://github.com/imfunniee/fimbo) - For The Base Template of this Portfolio
 - [tsParticles](https://github.com/tsparticles/404-templates) - For The Custom 404 Page
 - [TheKaushikGoswami](https://github.com/TheKaushikGoswami) - For This Readme page
 
